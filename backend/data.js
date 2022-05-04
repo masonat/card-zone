@@ -76,8 +76,7 @@ const data = {
 			brand: "JYP",
 			rating: 5.0,
 			numReviews: 10,
-			description:
-				" TWICE MONOGRAPH Taste of Love Photocard 9ea. Nayeon Photocard Only",
+			description: "TWICE MONOGRAPH Taste of Love Photocard Nayeon Photocard",
 		},
 	],
 };
