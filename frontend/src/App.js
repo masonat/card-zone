@@ -3,7 +3,7 @@ import { Container, Navbar } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
-import Footer from "./component/Footer";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
@@ -21,7 +21,7 @@ function App() {
 					</Navbar>
 				</header>
 				<main>
-					<Container>
+					<Container className='mt-3'>
 						<Routes>
 							<Route path='/product/:slug' element={<ProductScreen />} />
 							<Route path='/' element={<HomeScreen />} />

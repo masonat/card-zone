@@ -9,7 +9,7 @@ const data = {
 			countInStock: 10,
 			brand: "JYP",
 			rating: 4.5,
-			numReviews: 10,
+			numReviews: 23,
 			description: "high quality shirt",
 		},
 		{
@@ -21,7 +21,7 @@ const data = {
 			countInStock: 20,
 			brand: "JYP",
 			rating: 4.0,
-			numReviews: 10,
+			numReviews: 17,
 			description: "high quality product",
 		},
 		{

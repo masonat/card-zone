@@ -1,5 +1,6 @@
-function Rating(props) {
-	const { rating, numReviews } = props;
+const Rating = props => {
+	const { rating } = props;
+	const totalReviews = props.numReview;
 	return (
 		<div className='Rating'>
 			<span>
@@ -57,10 +58,10 @@ function Rating(props) {
 					}
 				></i>
 			</span>
-			<span>{numReviews} reviews</span>
+			<span>{totalReviews} reviews</span>
 		</div>
 	);
-}
+};
 
 Rating.defaultProps = {
 	color: "#E4572E",
