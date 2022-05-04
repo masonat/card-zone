@@ -1,6 +1,7 @@
 const data = {
 	products: [
 		{
+			_id: 1,
 			name: "Jihyo Feel Special",
 			slug: "jihyo-feel-special",
 			category: "Unnie",
@@ -13,6 +14,7 @@ const data = {
 			description: "high quality shirt",
 		},
 		{
+			_id: 2,
 			name: "Mina Feel Special",
 			slug: "mina-feel-special",
 			category: "Unnie",
@@ -25,6 +27,7 @@ const data = {
 			description: "high quality product",
 		},
 		{
+			_id: 3,
 			name: "Chaeyoung Feel Special",
 			slug: "chaeyoung-feel-special",
 			category: "Maknae",
@@ -37,6 +40,7 @@ const data = {
 			description: "high quality product",
 		},
 		{
+			_id: 4,
 			name: "Tzuyu Feel Special",
 			slug: "tzuyu-feel-special",
 			category: "Maknae",
@@ -49,6 +53,7 @@ const data = {
 			description: "high quality product",
 		},
 		{
+			_id: 5,
 			name: "Sana Formula of Love POB",
 			slug: "sana-fol-pob",
 			category: "Unnie",
@@ -61,6 +66,7 @@ const data = {
 			description: "high quality product",
 		},
 		{
+			_id: 5,
 			name: "Nayeon Taste of Love Monograph",
 			slug: "nayeon-tol-mono",
 			category: "Unnie",
