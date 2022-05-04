@@ -38,6 +38,10 @@ main {
 	max-width: 100%;
 }
 
+.img-thumbnail{
+	height: 80px;
+}
+
 .stock-icon{
 	color: #2d7345;
 }
@@ -46,4 +50,7 @@ main {
 	color: #9a2c2c;
 }
 
+.small-container {
+	max-width: 600px;
+}
 

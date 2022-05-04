@@ -28,12 +28,13 @@ export default function CartScreen() {
 			payload: { ...item, quantity },
 		});
 	};
-	const removeItemHandler = (item) => { // remove item from cart
+	const removeItemHandler = (item) => {
+		// remove item from cart
 		ctxDispatch({ type: "CART_REMOVE_ITEM", payload: item });
 	};
 
 	const checkoutHandler = () => {
-		navigate("/signin?redirect=/shipping");
+		navigate("/signin?redirect=/shipping"); // if user authenticated redirect them to shipping screen
 	};
 
 	return (
