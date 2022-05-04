@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useContext, useEffect, useReducer } from "react";
 import { Card, Row, Col, ListGroup, Button } from "react-bootstrap";
 import { Helmet } from "react-helmet-async";
@@ -24,6 +24,7 @@ const reducer = (state, action) => {
 
 function ProductScreen() {
 	const params = useParams();
+	const navigate = useNavigate();
 	const { slug } = params;
 
 	const [{ loading, error, product }, dispatch] = useReducer(reducer, {
@@ -47,9 +48,9 @@ function ProductScreen() {
 	const { cart } = state;
 	const addToCartHandler = async () => {
 		const existItem = cart.cartItems.find((x) => x._id === product._id);
-		const quanity = existItem ? existItem.quantity + 1 : 1;
+		const quantity = existItem ? existItem.quantity + 1 : 1;
 		const { data } = await axios.get(`/api/products/${product._id}`);
-		if (data.countInStock < quanity) {
+		if (data.countInStock < quantity) {
 			window.alert("Sorry, this product is out of stock");
 			return;
 		}
@@ -57,6 +58,7 @@ function ProductScreen() {
 			type: "CART_ADD_ITEM",
 			payload: { ...product, quantity: 1 },
 		});
+		navigate("/cart");
 	};
 	return loading ? (
 		<LoadingBox />
