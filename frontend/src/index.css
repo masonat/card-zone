@@ -33,3 +33,17 @@ main {
 .product-info {
 	padding: 1rem;
 }
+
+.img-large {
+	max-width: 100%;
+}
+
+.stock-icon{
+	color: #2d7345;
+}
+
+.no-stock-icon{
+	color: #9a2c2c;
+}
+
+
