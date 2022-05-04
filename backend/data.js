@@ -48,6 +48,31 @@ const data = {
 			numReviews: 10,
 			description: "high quality product",
 		},
+		{
+			name: "Sana Formula of Love POB",
+			slug: "sana-fol-pob",
+			category: "Unnie",
+			image: "/images/sana.jpg",
+			price: 35,
+			countInStock: 5,
+			brand: "JYP",
+			rating: 5.0,
+			numReviews: 10,
+			description: "high quality product",
+		},
+		{
+			name: "Nayeon Taste of Love Monograph",
+			slug: "nayeon-tol-mono",
+			category: "Unnie",
+			image: "/images/nayeon.jpg",
+			price: 35,
+			countInStock: 5,
+			brand: "JYP",
+			rating: 5.0,
+			numReviews: 10,
+			description:
+				" TWICE MONOGRAPH Taste of Love Photocard 9ea. Nayeon Photocard Only",
+		},
 	],
 };
 export default data;

@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomeScreen from "./screens/HomeScreen";
-import ProductScreen from "./screens/ProductScreen";
 import { Container, Navbar } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import HomeScreen from "./screens/HomeScreen";
+import ProductScreen from "./screens/ProductScreen";
+import Footer from "./component/Footer";
 
 function App() {
 	return (
@@ -27,9 +28,7 @@ function App() {
 						</Routes>
 					</Container>
 				</main>
-				<footer>
-					<div className='text-center'>All Rights Reserved </div>
-				</footer>
+				<Footer />
 			</div>
 		</BrowserRouter>
 	);
